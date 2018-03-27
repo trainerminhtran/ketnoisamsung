@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://azmind.com/demo/erine-coming-soon/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ketnoisamsung</title>
+
+        <!-- CSS -->
+   
+        
+        <link rel="stylesheet" href="./Erine - Bootstrap Coming Soon Template_files/bootstrap.min.css">
+        <link rel="stylesheet" href="./Erine - Bootstrap Coming Soon Template_files/animate.css">
+		<link rel="stylesheet" href="./Erine - Bootstrap Coming Soon Template_files/form-elements.css">
+        <link rel="stylesheet" href="./Erine - Bootstrap Coming Soon Template_files/style.css">
+        <link rel="stylesheet" href="./Erine - Bootstrap Coming Soon Template_files/media-queries.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="favicon.ico">
+        
+
+        <script>
+        var end = new Date('Mar 27, 2018 23:59:59');
+            console.log(end)
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById('days').innerHTML = days ;
+            document.getElementById('hours').innerHTML = hours ;
+            document.getElementById('minutes').innerHTML = minutes;
+            document.getElementById('seconds').innerHTML = seconds;
+        }
+
+        timer = setInterval(showRemaining, 1000);
+</script>
+
+                </head>
+
+    <body >
+
+        <!-- Coming Soon -->
+        <div class="coming-soon">
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                        	<div class="logo wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                        		<h1>
+                        			<a href="#">Kết Nối Samsung</a>
+                        		</h1>
+                        	</div>
+                            <h2 class="wow fadeInLeftBig animated" style="visibility: visible; animation-name: fadeInLeftBig;">Đang bảo trì</h2>
+                            <div id="countdown" class="timer wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="days-wrapper">
+                                    <span class="days" id="days">0</span> <br>Ngày
+                                </div> 
+                                <span class="slash">/</span> 
+                                <div class="hours-wrapper">
+                                    <span class="hours" id="hours">0</span> <br>Giờ
+                                </div> 
+                                <span class="slash">/</span> 
+                                <div class="minutes-wrapper">
+                                    <span class="minutes" id="minutes">0</span> <br>Phút
+                                </div> 
+                                <span class="slash">/</span> 
+                                <div class="seconds-wrapper">
+                                    <span class="seconds" id="seconds">0</span> <br>Giây
+                                </div>
+                            </div>
+                            <div class="wow fadeInLeftBig animated" style="visibility: visible; animation-name: fadeInLeftBig;">
+                            	<p>
+                            		Training team đang bảo trì website. 
+                            		Quay trở lại ngay khi có thể nhé.
+                            	</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-7 footer-copyright">
+	                    <p>© ketnoisamsung <a href="http://ketnoisamsung.com/">Training team</a><br>All rights reserved.</p>
+	                </div>
+	                <div class="col-sm-5 footer-social">
+	                	<a class="social-icon twitter" href="#" target="_blank"></a>
+	                	<a class="social-icon dribbble" href="#" target="_blank"></a>
+	                	<a class="social-icon facebook" href="#" target="_blank"></a>
+	                	<a class="social-icon google-plus" href="#" target="_blank"></a>
+	                </div>
+	            </div>
+	        </div>
+        </footer>
+
+
+        <!-- Javascript -->
+        <script src="./Erine - Bootstrap Coming Soon Template_files/jquery-1.10.2.min.js.download"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    
+
+
+<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 768px; width: 1519px; z-index: -999999; position: fixed;"><img src="./Erine - Bootstrap Coming Soon Template_files/1.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1519px; height: 1102.07px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -167.033px;"></div></body></html>
